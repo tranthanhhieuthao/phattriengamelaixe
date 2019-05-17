@@ -30,6 +30,8 @@ let MyCar = function (image,vx) {
                 this.movetop(); break;
             case 4:
                 this.movedown(); break;
+            case 5:
+                this.tangtoc();break;
         }
     };
 
@@ -49,6 +51,10 @@ let MyCar = function (image,vx) {
         this.top +=vx;
         this.direction = 4;
     };
+    this.tangtoc = function () {
+        vx = vx+2;
+        // this.direction = 5;
+    }
 
     //Vẽ chướng ngại vật cho game
 
@@ -101,12 +107,13 @@ function moveselection(evt) {
             Car.movedown();
             break;
         case 17:
-            Car.moveRight(30);
+            Car.tangtoc();
+
     }
 }
 //Khởi tạo object mới từ lớp MyCar
 
-let Car= new MyCar("Capture.png",5);
+let Car= new MyCar("Capture.png",4);
 Car.show();
 
 //Hàm bắt đầu chạy

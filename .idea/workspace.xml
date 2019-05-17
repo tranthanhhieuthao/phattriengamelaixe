@@ -145,18 +145,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+            <state relative-caret-position="-940">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#512#798#0" />
-                <element signature="e#986#1016#0" />
-                <element signature="e#1048#1077#0" />
-                <element signature="e#1110#1139#0" />
                 <element signature="e#1278#1505#0" />
                 <element signature="e#1588#1742#0" />
                 <element signature="e#1771#2029#0" />
-                <element signature="e#2049#2453#0" />
               </folding>
             </state>
           </provider>
@@ -249,15 +244,15 @@
       <updated>1558018157720</updated>
       <workItem from="1558018159143" duration="1967000" />
       <workItem from="1558020138031" duration="6911000" />
-      <workItem from="1558055897907" duration="26402000" />
+      <workItem from="1558055897907" duration="27261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35280000" />
+    <option name="totallyTimeSpent" value="36139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19037546" />
@@ -285,18 +280,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+        <state relative-caret-position="-940">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#512#798#0" />
-            <element signature="e#986#1016#0" />
-            <element signature="e#1048#1077#0" />
-            <element signature="e#1110#1139#0" />
             <element signature="e#1278#1505#0" />
             <element signature="e#1588#1742#0" />
             <element signature="e#1771#2029#0" />
-            <element signature="e#2049#2453#0" />
           </folding>
         </state>
       </provider>
