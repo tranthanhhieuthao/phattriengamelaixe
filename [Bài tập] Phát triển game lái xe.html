@@ -13,6 +13,10 @@
 let CV = document.getElementById("myCanvas");
 let ctx = CV.getContext("2d");
 let diem=0;
+let chuongngaix =[150,400,600,1000,900,600,700,900,600,1400];
+let chuongngaiy =[200,250,490,520,200,25,190,350,400,200];
+let hinhtronx =[145,15,600,265,685,780,1300,1009,550];
+let hinhtrony =[145,200,285,235,15,300,300,240,450];
 let MyCar = function (image,vx) {
     this.top=20;
     this.left=20;
@@ -50,13 +54,10 @@ let MyCar = function (image,vx) {
     };
     this.tangtoc = function () {
         vx = vx+2;
-        // this.direction = 5;
     };
     this.giamtoc = function () {
         vx = vx-2;
-        // this.direction = 5;
     };
-
 
     //Vẽ chướng ngại vật cho game
 
@@ -113,6 +114,9 @@ function moveselection(evt) {
             break;
     }
 }
+
+//Khi nhả phím ctr tốc độ về như cũ
+
 function moveselection1(evt1) {
     switch (evt1.keyCode) {
         case 17:
@@ -136,10 +140,7 @@ function start () {
 
     // Vẽ các chướng ngại vật
     //Vẽ vong tròn ăn điểm
-    let chuongngaix =[150,400,600,1000,900,600,700,900,600,1400];
-    let chuongngaiy =[200,250,490,520,200,25,190,350,400,200];
-    let hinhtronx =[145,15,600,265,685,780,1300,1009,550];
-    let hinhtrony =[145,200,285,235,15,300,300,240,450];
+
     for (let i=0;i<chuongngaix.length;i++){
         Car.hinhtronhivong(hinhtronx[i],hinhtrony[i]);
         Car.chuongngaivat(chuongngaix[i],chuongngaiy[i]);
@@ -158,7 +159,12 @@ function start () {
         }
         //an diem
         if (Car.left <hinhtronx[i]+20 && Car.top < hinhtrony[i]+20 &&
-            Car.left >hinhtronx[i] && Car.top >hinhtrony[i])  diem++;
+            Car.left >hinhtronx[i] && Car.top >hinhtrony[i]) {
+            diem++;
+            hinhtronx.splice(i,1);
+            hinhtrony.splice(i,1);
+            ctx.clearRect(0, 0, CV.width, CV.height);
+        }
     }
     setTimeout(start,0);
 }
