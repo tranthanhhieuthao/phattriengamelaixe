@@ -30,8 +30,6 @@ let MyCar = function (image,vx) {
                 this.movetop(); break;
             case 4:
                 this.movedown(); break;
-            case 5:
-                this.tangtoc();break;
         }
     };
     this.moveleft = function (){
@@ -53,7 +51,12 @@ let MyCar = function (image,vx) {
     this.tangtoc = function () {
         vx = vx+2;
         // this.direction = 5;
-    }
+    };
+    this.giamtoc = function () {
+        vx = vx-2;
+        // this.direction = 5;
+    };
+
 
     //Vẽ chướng ngại vật cho game
 
@@ -107,7 +110,14 @@ function moveselection(evt) {
             break;
         case 17:
             Car.tangtoc();
-
+            break;
+    }
+}
+function moveselection1(evt1) {
+    switch (evt1.keyCode) {
+        case 17:
+            Car.giamtoc();
+            break;
     }
 }
 //Khởi tạo object mới từ lớp MyCar
@@ -120,6 +130,7 @@ Car.show();
 function start () {
     Car.move();
     window.addEventListener("keydown",moveselection);
+    window.addEventListener("keyup",moveselection1);
     Car.show();
     document.getElementById("tinhdiem").innerHTML = "Điểm của bạn là:"+"  " +diem;
 
