@@ -34,7 +34,6 @@ let MyCar = function (image,vx) {
                 this.tangtoc();break;
         }
     };
-
     this.moveleft = function (){
         this.left -=vx;
         this.direction = 2;
@@ -84,7 +83,7 @@ let MyCar = function (image,vx) {
         let x = this.left;
         let y = this.top;
         img.onload=function(){
-            ctx.drawImage(img,x,y,40,40);
+            ctx.drawImage(img,x,y,80,50);
         };
         img.src = this.image;
     }
@@ -113,7 +112,7 @@ function moveselection(evt) {
 }
 //Khởi tạo object mới từ lớp MyCar
 
-let Car= new MyCar("Capture.png",4);
+let Car= new MyCar("purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png",4);
 Car.show();
 
 //Hàm bắt đầu chạy
@@ -136,7 +135,7 @@ function start () {
 
         //gap Chuong ngai vat
 
-        if (Car.left <chuongngaix[i]+60 && Car.top < chuongngaiy[i]+60 &&
+        if (Car.left <chuongngaix[i]+80 && Car.top < chuongngaiy[i]+50 &&
             Car.left >chuongngaix[i] && Car.top >chuongngaiy[i])  {
             alert("Dừng cuộc chơi ^^");
             car.show();
