@@ -56,8 +56,8 @@ let MyCar = function (image,vx) {
         ctx.beginPath();
         ctx.moveTo(x,y);
         ctx.lineTo(x+60,y);
-        ctx.lineTo(x+60,y+80);
-        ctx.lineTo(x,y+80);
+        ctx.lineTo(x+60,y+60);
+        ctx.lineTo(x,y+60);
         ctx.lineTo(x,y);
         ctx.fillStyle="rgb(0,16,213)";
         ctx.fill()
@@ -119,17 +119,17 @@ function start () {
 
     // Vẽ các chướng ngại vật
     //Vẽ vong tròn ăn điểm
-    let chuongngaix =[150,400,600,1000,900,600,700,900,1500];
-    let chuongngaiy =[200,250,490,520,200,25,190,350,600];
-    let hinhtronx =[145,15,600,265,685];
-    let hinhtrony =[145,200,285,235,15];
-    for (let i=0;i<10;i++){
+    let chuongngaix =[150,400,600,1000,900,600,700,900,600,1400];
+    let chuongngaiy =[200,250,490,520,200,25,190,350,400,200];
+    let hinhtronx =[145,15,600,265,685,780,1300,1009,550];
+    let hinhtrony =[145,200,285,235,15,300,300,240,450];
+    for (let i=0;i<20;i++){
         Car.hinhtronhivong(hinhtronx[i],hinhtrony[i]);
         Car.chuongngaivat(chuongngaix[i],chuongngaiy[i]);
 
         //gap Chuong ngai vat
 
-        if (Car.left <chuongngaix[i]+60 && Car.top < chuongngaiy[i]+80 &&
+        if (Car.left <chuongngaix[i]+60 && Car.top < chuongngaiy[i]+60 &&
             Car.left >chuongngaix[i] && Car.top >chuongngaiy[i])  {
             alert("Dừng cuộc chơi ^^");
             car.show();
