@@ -112,7 +112,7 @@ function moveselection(evt) {
 }
 //Khởi tạo object mới từ lớp MyCar
 
-let Car= new MyCar("purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png",4);
+let Car= new MyCar("purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png",0.5);
 Car.show();
 
 //Hàm bắt đầu chạy
@@ -149,7 +149,7 @@ function start () {
         if (Car.left <hinhtronx[i]+20 && Car.top < hinhtrony[i]+20 &&
             Car.left >hinhtronx[i] && Car.top >hinhtrony[i])  diem++;
     }
-    setTimeout(start,20);
+    setTimeout(start,0);
 }
 start();
 </script>
