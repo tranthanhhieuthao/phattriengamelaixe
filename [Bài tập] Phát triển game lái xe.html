@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<div id="game"></div>
+<canvas id="myCanvas" width="1500" height="600" style="border: 1px solid red"> </canvas>
+<br/>
+<div id="tinhdiem"></div>
+<script>
+let CV = document.getElementById("myCanvas");
+let ctx = CV.getContext("2d");
+let diem=0;
+let MyCar = function (image,vx) {
+    this.top=20;
+    this.left=20;
+    this.image=image;
+    this.direction = 0;
+
+    this.move = function() {
+        console.log(this.direction);
+        switch (this.direction) {
+            case 1:
+                this.moveRight(); break;
+            case 2:
+                this.moveleft(); break;
+            case 3:
+                this.movetop(); break;
+            case 4:
+                this.movedown(); break;
+        }
+    };
+
+    this.moveleft = function (){
+        this.left -=vx;
+        this.direction = 2;
+    };
+    this.moveRight = function (){
+        this.left +=vx;
+        this.direction = 1;
+    };
+    this.movetop = function (){
+        this.top -=vx;
+        this.direction = 3;
+    };
+    this.movedown = function (){
+        this.top +=vx;
+        this.direction = 4;
+    };
+
+    //Vẽ chướng ngại vật cho game
+
+    this.chuongngaivat = function (x,y) {
+        ctx.beginPath();
+        ctx.moveTo(x,y);
+        ctx.lineTo(x+60,y);
+        ctx.lineTo(x+60,y+80);
+        ctx.lineTo(x,y+80);
+        ctx.lineTo(x,y);
+        ctx.fillStyle="rgb(0,16,213)";
+        ctx.fill()
+    };
+    //Vẽ hình tròn ăn được tính 1 điểm
+
+    this.hinhtronhivong = function (x,y) {
+        ctx.beginPath();
+        ctx.arc(x,y,10,0,2*Math.PI);
+        ctx.fillStyle = "rgb(45,5,116)";
+        ctx.fill();
+        ctx.closePath()
+    };
+
+    this.show = function(){
+        ctx.clearRect(0, 0, CV.width, CV.height);
+        let img =new Image();
+        let x = this.left;
+        let y = this.top;
+        img.onload=function(){
+            ctx.drawImage(img,x,y,40,40);
+        };
+        img.src = this.image;
+    }
+};
+
+// Sự kiện khi nhấn phím xe đổi hướng
+
+function moveselection(evt) {
+    switch (evt.keyCode) {
+        case 37:
+            Car.moveleft();
+            break;
+        case 39:
+            Car.moveRight();
+            break;
+        case 38:
+            Car.movetop();
+            break;
+        case 40:
+            Car.movedown();
+            break;
+        case 17:
+            Car.moveRight(30);
+    }
+}
+//Khởi tạo object mới từ lớp MyCar
+
+let Car= new MyCar("Capture.png",5);
+Car.show();
+
+//Hàm bắt đầu chạy
+
+function start () {
+    Car.move();
+    window.addEventListener("keydown",moveselection);
+    Car.show();
+    document.getElementById("tinhdiem").innerHTML = "Điểm của bạn là:"+"  " +diem;
+
+    // Vẽ các chướng ngại vật
+    //Vẽ vong tròn ăn điểm
+    let chuongngaix =[150,400,600,1000,900,600,700];
+    let chuongngaiy =[200,250,490,520,200,25,190];
+    let hinhtronx =[145,15,600,265,685];
+    let hinhtrony =[145,200,285,235,15];
+    for (let i=0;i<10;i++){
+        Car.hinhtronhivong(hinhtronx[i],hinhtrony[i]);
+        Car.chuongngaivat(chuongngaix[i],chuongngaiy[i]);
+
+        //Chuong ngai vat
+
+        if (Car.left <chuongngaix[i]+60 && Car.top < chuongngaiy[i]+80 &&
+            Car.left >chuongngaix[i] && Car.top >chuongngaiy[i])  alert("Dừng cuộc chơi ^^");
+        if (Car.top < 0 || Car.top >= CV.height-40
+        || Car.left < 0 || Car.left >= CV.width-40 ){
+        alert("Dừng cuộc chơi ^^");
+        }
+        //an diem
+        if (Car.left <hinhtronx[i]+10 && Car.top < hinhtrony[i]+10 &&
+            Car.left >hinhtronx[i] && Car.top >hinhtrony[i])  diem++;
+    }
+    setTimeout(start,20);
+}
+start();
+</script>
+</body>
+</html>
