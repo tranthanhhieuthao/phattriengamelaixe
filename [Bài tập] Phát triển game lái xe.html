@@ -161,8 +161,16 @@ function start () {
         if (Car.left <hinhtronx[i]+20 && Car.top < hinhtrony[i]+20 &&
             Car.left >hinhtronx[i] && Car.top >hinhtrony[i]) {
             diem++;
+
+            //Sau khi ăn điểm ,hinh tròn đó sẽ mất đi
+
             hinhtronx.splice(i,1);
             hinhtrony.splice(i,1);
+
+            //Sau khi ăn điểm hình tròn cũ mất đi thì sẽ khởi tạo 1 hình tròn ăn điểm mới
+
+            hinhtronx.push(Math.floor(Math.random()*1500));
+            hinhtrony.push(Math.floor(Math.random()*600));
         }
     }
     setTimeout(start,0);
