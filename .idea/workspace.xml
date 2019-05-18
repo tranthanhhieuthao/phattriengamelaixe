@@ -105,7 +105,6 @@
       <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html" beforeDir="false" afterPath="$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Thực hành] Chuyển đổi nhiệt độ/Chuyển đổi nhiệt độ.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Thực hành] Chuyển đổi nhiệt độ/Chuyển đổi nhiệt độ.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Thực hành] Xây dựng lớp Hình Tròn/[Thực hành] Xây dựng lớp Hình Tròn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Thực hành] Xây dựng lớp Hình Tròn/[Thực hành] Xây dựng lớp Hình Tròn.html" afterDir="false" />
@@ -146,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="163" column="34" lean-forward="true" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="34" />
+            <state relative-caret-position="152">
+              <caret line="154" column="50" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -245,15 +244,16 @@
       <workItem from="1558055897907" duration="29270000" />
       <workItem from="1558105503696" duration="5620000" />
       <workItem from="1558147654188" duration="1198000" />
-      <workItem from="1558172252994" duration="845000" />
+      <workItem from="1558172252994" duration="1111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45811000" />
+    <option name="totallyTimeSpent" value="46077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19037546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -267,7 +267,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299435" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3299435" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -280,8 +280,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="163" column="34" lean-forward="true" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="34" />
+        <state relative-caret-position="152">
+          <caret line="154" column="50" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
