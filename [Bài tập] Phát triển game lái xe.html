@@ -12,11 +12,14 @@
 <script>
 let CV = document.getElementById("myCanvas");
 let ctx = CV.getContext("2d");
-let diem=0;
+let diem=0; //tính điểm khi chơi
 let chuongngaix =[150,400,600,1000,900,600,700,900,600,1400];
 let chuongngaiy =[200,250,490,520,200,25,190,350,400,200];
 let hinhtronx =[145,15,600,265,685,780,1300,1009,550];
 let hinhtrony =[145,200,285,235,15,300,300,240,450];
+
+//Khởi tạo lớp xe oto
+
 let MyCar = function (image,vx) {
     this.top=20;
     this.left=20;
@@ -127,7 +130,7 @@ function moveselection1(evt1) {
 //Khởi tạo object mới từ lớp MyCar
 
 let Car= new MyCar("purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png",2);
-Car.show();
+Car.moveRight();
 
 //Hàm bắt đầu chạy
 
@@ -150,16 +153,23 @@ function start () {
         if (Car.left <chuongngaix[i]+60 && Car.top < chuongngaiy[i]+50 &&
             Car.left >chuongngaix[i]-80 && Car.top >chuongngaiy[i]-50)  {
             alert("Dừng cuộc chơi ^^"+" "+"số điểm của bạn là:"+" "+diem);
-            location.reload()
+
+            //Khi thua cuộc sẽ bắt đầu lại trò chơi mới
+
+            location.reload();
             car.show();
         }
         if (Car.top < 0 || Car.top >= CV.height-45
         || Car.left < 0 || Car.left >= CV.width-75 ){
         alert("Dừng cuộc chơi ^^"+" "+"số điểm của bạn là:"+" "+diem);
-            location.reload()
+
+        //Khi thua cuộc sẽ bắt đầu lại trò chơi mới
+
+            location.reload();
             car.show();
         }
         //an diem
+
         if (Car.left <hinhtronx[i]+20 && Car.top < hinhtrony[i]+20 &&
             Car.left >hinhtronx[i]-80 && Car.top >hinhtrony[i]-50) {
             diem++;
@@ -176,6 +186,7 @@ function start () {
         }
     }
     setTimeout(start,0);
+
 }
 start();
 </script>
