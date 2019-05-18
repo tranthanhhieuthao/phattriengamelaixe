@@ -126,7 +126,7 @@ function moveselection1(evt1) {
 }
 //Khởi tạo object mới từ lớp MyCar
 
-let Car= new MyCar("purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png",0.5);
+let Car= new MyCar("purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png",2);
 Car.show();
 
 //Hàm bắt đầu chạy
@@ -150,11 +150,13 @@ function start () {
         if (Car.left <chuongngaix[i]+60 && Car.top < chuongngaiy[i]+50 &&
             Car.left >chuongngaix[i]-80 && Car.top >chuongngaiy[i]-50)  {
             alert("Dừng cuộc chơi ^^"+" "+"số điểm của bạn là:"+" "+diem);
+            location.reload()
             car.show();
         }
         if (Car.top < 0 || Car.top >= CV.height-45
         || Car.left < 0 || Car.left >= CV.width-75 ){
         alert("Dừng cuộc chơi ^^"+" "+"số điểm của bạn là:"+" "+diem);
+            location.reload()
             car.show();
         }
         //an diem
