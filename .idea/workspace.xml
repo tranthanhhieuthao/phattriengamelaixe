@@ -11,6 +11,8 @@
       <change afterPath="$PROJECT_DIR$/../Phát triển game lái xe/Phát triển game lái xe.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../[Bài tập] Game đơn giản - di chuyển đối tượng/[Bài tập] Game đơn giản - di chuyển đối tượng.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../[Bài tập] Game đơn giản - di chuyển đối tượng/[Bài tập] Game đơn giản - di chuyển đối tượng.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Bài tập] Phát triển trò chơi cờ ca-ro/[Bài tập] Phát triển trò chơi cờ ca-ro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../[Bài tập] Phát triển trò chơi cờ ca-ro/carogame.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../[Bài tập] Xây dựng lớp mô tả Temperature/.idea/[Bài tập] Xây dựng lớp mô tả Temperature.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../[Bài tập] Xây dựng lớp mô tả Temperature/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../[Bài tập] Xây dựng lớp mô tả Temperature/.idea/modules.xml" afterDir="false" />
@@ -105,6 +107,7 @@
       <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Luyện tập tạo và sử dụng hàm 02/Bai9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html" beforeDir="false" afterPath="$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Thực hành] Chuyển đổi nhiệt độ/Chuyển đổi nhiệt độ.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Thực hành] Chuyển đổi nhiệt độ/Chuyển đổi nhiệt độ.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[Thực hành] Xây dựng lớp Hình Tròn/[Thực hành] Xây dựng lớp Hình Tròn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../[Thực hành] Xây dựng lớp Hình Tròn/[Thực hành] Xây dựng lớp Hình Tròn.html" afterDir="false" />
@@ -145,8 +148,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+            <state relative-caret-position="572">
+              <caret line="205" column="25" selection-start-line="205" selection-start-column="25" selection-end-line="205" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -184,10 +187,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="412" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="992" />
+    <option name="x" value="299" />
+    <option name="y" value="44" />
+    <option name="width" value="1027" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,13 +209,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../doyouloveme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[Bài tập] Phát triển trò chơi cờ ca-ro" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -244,18 +247,19 @@
       <workItem from="1558055897907" duration="29270000" />
       <workItem from="1558105503696" duration="5620000" />
       <workItem from="1558147654188" duration="1198000" />
-      <workItem from="1558172252994" duration="7757000" />
+      <workItem from="1558172252994" duration="12595000" />
+      <workItem from="1558231282475" duration="4400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52723000" />
+    <option name="totallyTimeSpent" value="61961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19037546" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19037546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -280,8 +284,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/[Bài tập] Phát triển game lái xe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+        <state relative-caret-position="572">
+          <caret line="205" column="25" selection-start-line="205" selection-start-column="25" selection-end-line="205" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
